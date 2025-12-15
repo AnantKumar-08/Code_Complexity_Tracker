@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Code Complexity Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Code Complexity Tracker</h1>
+        <p>Analyze JavaScript code for structural complexity</p>
+    </header>
+
+    <main>
+        <!-- Code Input -->
+        <section class="editor-section">
+            <textarea id="codeInput" placeholder="// Paste your JavaScript code here
+function example(a, b) {
+  if (a > b) {
+    return a;
+  }
+  return b;
+}"></textarea>
+            <button id="analyzeBtn">Analyze Code</button>
+        </section>
+
+        <!-- Metrics -->
+        <section class="metrics">
+            <div class="card">
+                <span id="loc">0</span>
+                <p>Lines of Code</p>
+            </div>
+            <div class="card">
+                <span id="functions">0</span>
+                <p>Functions</p>
+            </div>
+            <div class="card">
+                <span id="loops">0</span>
+                <p>Loops</p>
+            </div>
+            <div class="card">
+                <span id="conditionals">0</span>
+                <p>Conditionals</p>
+            </div>
+            <div class="card">
+                <span id="nesting">0</span>
+                <p>Max Nesting</p>
+            </div>
+        </section>
+
+        <!-- Result -->
+        <section class="result">
+            <h2>Complexity Level</h2>
+            <div id="complexityBadge">-</div>
+            <canvas id="myChart"></canvas>
+            <p id="complexityText">Paste code and analyze to see results.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Frontend heuristic-based analyzer</p>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

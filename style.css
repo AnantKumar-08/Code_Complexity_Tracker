@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f9f7f3;
+    color: #2f2f2f;
+    font-family: system-ui, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #38bdf8;
+}
+
+header p {
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.editor-section {
+    margin-bottom: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    background: #ffffff;
+    color: #2f2f2f;
+    border: 1px solid #d6d3cb;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 0.95rem;
+    resize: none;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #6b7280;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #f1ede4;
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #d6d3cb;
+}
+
+.card span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    opacity: 0.8;
+}
+
+.result {
+    background: #f1ede4;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #d6d3cb;
+}
+
+#complexityBadge {
+    margin: 1rem auto;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.low {
+    display: none;
+    color: #7ca982;
+}
+
+.medium {
+    display: none;
+    color: #d6b87c;
+}
+
+.high {
+    display: none;
+    color: #b66a5c;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+#myChart{
+    display: none;
+}
